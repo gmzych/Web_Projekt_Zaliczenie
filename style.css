@@ -1,0 +1,788 @@
+/* font-family: 'Saira', sans-serif;
+font-family: 'Saira Condensed', sans-serif; 
+font-family: 'Roboto', sans-serif;
+*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clearfix::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header
+{
+    position: relative;
+    background-color: rgb(255,88,81);
+    height: 100vh;
+    overflow: hidden;
+    max-width:1920px;
+    margin: 0 auto;
+
+}
+header >* 
+{
+position: absolute;
+
+}
+
+header img
+{
+    position: absolute;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+}
+header div.header1
+{
+    z-index: 1;
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    right: 5%;
+    font-family: 'Saira Condensed', sans-serif;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+header h1
+{
+    margin-top: 15px;
+    font-size: 20px;
+    
+}
+header h2
+{
+    font-size: 20px;
+    font-weight: normal;
+}
+header div .button
+{
+    font-family: 'Saira', sans-serif;
+    font-weight: 300px;
+    line-height: 32px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    color: black;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer; 
+}
+
+@media (orientation: portrait ) and (min-width: 360px)
+{
+    header p 
+    {
+        font-size: 70px;
+    }
+    header h1
+    {
+        font-size: 24px;
+    }
+    header h2
+    {
+        font-size: 24px;
+    }
+    header div .button
+    {
+        margin-top: 24px;
+        line-height: 40px;
+        font-size: 16px;
+        border-radius: 20px;
+    }
+    .contactform button
+    {
+        max-width: 160px;
+        height: 50px;
+        border-radius: 40px;
+        display: block;
+        margin: auto;
+    }
+   
+
+
+}
+@media (orientation: portrait) and (min-width: 768px)
+{
+    header p
+    {
+        font-size: 100px;
+    }
+    header h1
+    {
+        font-size: 35px; 
+    }
+    header h2
+    {
+        font-size: 35px;
+    }
+    header div .button
+    {
+        margin-top: 60px;
+        line-height: 60px;
+        font-size:24px;
+        border-radius: 20px;
+    }
+    header img
+    {
+        right: -20%;
+    }
+}
+@media (orientation: landscape)
+{
+    header p 
+    {
+        font-size: 80px;
+    }
+    header img
+    {
+    position: absolute;
+    height: 80%;
+    bottom: 0;
+    right: -10%;
+
+    }
+    header div.header1  
+    {
+        top: 15%;
+        left:5%;
+        right: 50%;
+    }
+    header div .button
+    {
+        margin-top: 40px;
+        border-radius: 20px;
+    }
+}
+
+@media (orientation: landscape) and (min-width:640px)
+{
+    header h1
+    {
+        font-size: 24px;
+
+
+    }
+    header h2: 
+    {
+        font-size: 24px;
+    }
+    header div .button 
+    {
+        font-size: 16px;
+        line-height: 40px;
+        border-radius: 20px;
+    }
+    .contactform button
+    {
+        max-width: 160px;
+        height: 50px;
+        border-radius: 40px;
+        display: block;
+        margin: auto;
+    }
+
+}
+@media (orientation: landscape) and (min-width:1024px)
+{
+    header p
+    {
+        font-size: 100px;
+    }
+    header h1
+    {
+        margin-top: 40px;
+        font-size: 34px;
+    }
+    header h2
+    {
+        font-size: 34px;
+    }
+    header div .button 
+    {
+        margin-top: 80px;
+        font-size: 24px;
+        line-height: 60px;
+        border-radius: 25px;
+        
+    }
+    header img
+    {
+        height: 85%;
+        right: -15%;
+    }
+
+}
+@media (orientation: landscape) and (min-width:1280px)
+{
+    header div.header1 
+    {
+        text-align: left;
+        left: 6%;
+    }
+    header p
+    {
+        font-size: 160px;
+    }
+    header h1
+    {
+        margin-top: 40px;
+        font-size: 40px;
+
+    }
+    header h2
+    {
+        font-size: 30px;
+    }
+    header div .button
+    {
+        
+        margin-top: 100px;
+        font-size: 30px;
+        line-height: 80px;
+        padding: 0 40px;
+        border-width: 4px;
+        border-radius: 30px;
+    }
+    header img
+    {
+        height: 80%;
+        right: -10%;
+    }
+
+}
+@media (orientation: landscape) and (min-width:1600px)
+{
+    header p
+    {font-size: 120px;
+    }
+    header h1
+    {
+        margin-top: 40px;
+        font-size: 60px;
+
+    }
+    header h2
+    {
+        font-size: 60px;
+    }
+    header div .button
+    {
+        margin-top: 100px;
+        font-size: 38px;
+        line-height: 85px;
+        padding: 0 40px;
+        border-width: 4px;
+        border-radius: 30px;
+    }
+    header img
+    {
+        height: 85%;
+        right: -8%;
+        
+    }
+
+
+
+}
+@media (min-width: 1024px)
+{
+    header div .button
+    {
+        cursor: pointer;
+        transition: background-color 2s ease-in-out;
+        outline:none;
+        scroll-behavior: smooth;
+        
+    }
+    header div .button:hover
+    {
+        background-color: white;
+        scroll-behavior: smooth;
+    }
+    
+}
+
+/* STYLE DO 1 SEKCJI TECHNOLOGIE */
+
+.mainpage
+{
+    max-width: 1600px;
+    margin:50px auto 0;
+    padding: 5%;
+    text-align: center;
+}
+.mainpage h1
+{
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Saira Condensed', sans-serif;  */
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    
+}
+.mainpage h2
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 34px;
+    text-transform: uppercase;
+}
+.mainpage p.description 
+{
+    font-family: 'Saira',sans-serif;
+    font-size: 12px;
+    font-weight: 300px;
+    margin: 20px 0;
+
+
+}
+
+.mainpage img
+{
+    width: 100%;
+    margin: 5px 0;
+    /* max-width: 350px; */
+}
+
+@media (min-width: 360px)
+{
+    .mainpage h1
+    {
+        font-size: 35px;
+    }
+    .mainpage h2
+    {
+        font-size: 24px;
+    }
+    .mainpage p
+    {
+        font-size: 16px;
+    }
+}
+@media (min-width: 768px)
+{
+    .mainpage h1
+    {
+        font-size: 50px;
+    }
+    .mainpage h2
+    {
+        font-size: 30px;
+    }
+    .mainpage p
+    {
+        font-size: 20px;
+    }
+}
+@media (min-width: 1024px)
+{
+    .mainpage
+    {
+        margin-top: 50px;
+        padding: 5% 2%;
+        text-align: center;
+    }
+    .main1
+    {
+        float: left;
+        width: 33%;
+        padding: 20px;
+    }
+    .mainpage h1
+    {
+        font-size: 50px;
+    }
+    .mainpage h2
+    {
+        font-size: 23px;
+    }
+    .mainpage p
+    {
+        font-size: 17px;
+        line-height: 120%;
+        padding: 0 10px;
+    
+    }
+}
+@media (min-width: 1600px)
+{
+    .mainpage
+    {
+        padding: 20px 40px;
+    }
+    .mainpage h1
+    {
+        font-size: 60px;
+    }
+    .mainpage h2
+    {
+        font-size: 32px;
+    }
+    .mainpage p
+    {
+        font-size: 17px;
+        line-height: 120%;
+        padding: 0 10px;
+    
+    }
+}
+/* STYLE DO 2 SEKCJI PORTFOLIO */
+.myportfolio
+{
+    background-color: #f2f1ed;
+    padding: 10px 0 30px;
+
+}
+.myportfolio h1
+{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+}
+.allproject .project img
+{
+    width: 100%;
+    overflow: hidden;
+
+}
+.allproject .about 
+{
+   
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    padding: 10px 20px 20px 0;
+    text-align: left;
+
+}
+.allproject .about h2
+{
+    font-size: 18px;
+    border-bottom: 4px solid white;
+    padding-bottom: 6px;
+    text-indent: 20px;
+}
+.allproject .about p
+{
+    font-size: 12px;
+    padding-left: 20px;
+}
+.myportfolio .project
+{
+    max-width: 1400px;
+    margin: 0 auto 20px;
+}
+
+@media (orientation: landscape)
+{
+    .project,.about 
+    {
+        widows: 50%;
+        float: left;
+
+    }
+    .project img
+    {
+        display: block;
+    }
+}
+@media (min-width: 768px)
+{
+    .myportfolio h1
+    {
+        font-size:45px;
+
+
+    }
+    .myportfolio .about h2
+    {
+        font-size: 28px;
+        border-bottom: 4px solid white;
+        margin-bottom: 12px;
+        padding-bottom: 6px;
+        text-indent: 40px;
+
+    }
+    .myportfolio .about p 
+    {
+        font-size: 14px;
+        padding-left: 40px;
+    }
+    .myportfolio .project
+    {
+        margin-bottom: 40px;
+    }
+    
+}
+@media (orientation: landscape) and (min-width: 1024px)
+{
+    .myportfolio h1
+    {
+        font-size:50px;
+
+
+    }
+    .myportfolio .about h2
+    {
+        font-size: 28px;
+        border-bottom: 4px solid white;
+        margin-bottom: 12px;
+        padding-bottom: 6px;
+        text-indent: 40px;
+
+    }
+    .myportfolio .about p 
+    {
+        font-size: 14px;
+        padding-left: 40px;
+    }
+    .myportfolio .project
+    {
+        margin-bottom: 40px;
+    }
+    .allproject .project
+    {
+        width: 100%;
+    }
+
+}
+@media (orientation: landscape) and (min-width: 1400px)
+{
+    .myportfolio h1
+    {
+        font-size:60px;
+        padding-top: 30px 0;
+
+
+    }
+    .myportfolio .about h2
+    {
+        padding-top: 50px;
+        font-size: 28px;
+        padding-left: 40px;
+        margin-bottom: 50px;
+        
+
+    }
+    .myportfolio .about p 
+    {
+        font-size: 18px;
+        padding-left: 40px;
+        line-height: 180%;
+    }
+    .myportfolio .project
+    {
+        margin-bottom: 40px;
+    }
+
+}
+/* STYLE DO SEKCJI O MNIE */
+.motto
+{
+    text-align: center;
+    background-image: url(/Users/michalzych/Desktop/jpg1.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 10px;
+    background-attachment: fixed;
+    
+}
+.motto h1
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.motto p.authortext
+{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+
+}
+.motto p
+{
+    font-family: 'Saira', sans-serif;
+    font-size: 18px;
+}
+
+@media (orientation: landscape) and (min-width: 360px)
+{
+    .motto p 
+    {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+@media (min-width: 768px)
+{
+    .motto h1
+    {
+        font-family: 'Roboto', sans-serif;
+        font-size: 40px;
+        margin-bottom: 28px;
+
+    }
+    .motto p
+    {
+        font-family: 'Saira',sans-serif;
+        font-size: 28px;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .motto p.author
+    {
+        margin-top: 40px;
+        font-size: 18px;
+        text-align: center; 
+    }
+    
+}
+@media (min-width: 1024px)
+{
+    .motto h1
+    {
+        font-family: 'Roboto', sans-serif;
+        font-size: 60px;
+        margin-bottom: 55px;
+
+    }
+    .motto p
+    {
+        font-family: 'Saira',sans-serif;
+        font-size: 32px;
+        width: 60%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+
+    }
+    .motto p.author
+    {
+        margin-top: 40px;
+        font-size: 26px;
+        text-align: center; 
+    }
+    
+}
+/* STYLE DO KONTAKTU */
+.contactform
+{
+    background-color: #f2f1ed;
+}
+.contactform h2
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    padding-top: 20px;
+    text-align: center;
+    /* padding: 0 20px; */
+}
+.contactform h1
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
+.contactform wrap
+{
+    padding-top: 20px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.contactform input, 
+.contactform button, 
+.contactform textarea
+{
+    width: 100%;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding: 5px;
+    
+}
+.contactform input
+{
+    height: 36px;
+    
+}
+.contactform textarea
+{
+    height: 140px;
+}
+.contactform button
+{
+    line-height: 40px;
+    font-size: 14px;
+    border-radius: 25px;
+    border: 2px solid black;
+    
+}
+.contactform .iconcontact
+{
+    padding-top: 35px;
+    font-size: 0;
+}
+.contactform .icon
+{
+
+    padding: 10px 15px;
+    font-family: 'Roboto', sans-serif;
+}
+.contactform .icon img
+{
+    float: left;
+}
+.contactform .icon span
+{
+    line-height: 72px;
+    padding-left: 15px;
+    float: left;
+    font-size: 18px;
+    
+}
+@media (min-width: 533px)
+{
+    .contactform .icon
+    {
+        display: inline-block;
+        width: 49%;
+    }
+   
+}
+@media (min-width: 1024px) and (orientation:landscape)
+{
+    .contactform form
+    {
+        display: block;
+        margin: 0 auto;
+    }
+    .contactform button
+    {
+        max-width: 200px;
+        height: 70px;
+        border-radius: 40px;
+        display: block;
+        margin: auto;
+    }
+
+   
+
+}
