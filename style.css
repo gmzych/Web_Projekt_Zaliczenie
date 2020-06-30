@@ -102,14 +102,13 @@ header div .button
     }
     .contactform button
     {
-        max-width: 160px;
+        max-width: 115px;
         height: 50px;
         border-radius: 40px;
         display: block;
         margin: auto;
     }
-   
-
+    
 
 }
 @media (orientation: portrait) and (min-width: 768px)
@@ -482,7 +481,7 @@ header div .button
 }
 .myportfolio .project
 {
-    max-width: 1400px;
+    max-width: 1440px;
     margin: 0 auto 20px;
 }
 
@@ -593,7 +592,7 @@ header div .button
 .motto
 {
     text-align: center;
-    background-image: url(/Users/michalzych/Desktop/jpg1.jpeg);
+    background-image: url("motto.jpeg");
     background-size: cover;
     background-position: center;
     padding: 10px 10px;
@@ -776,13 +775,18 @@ header div .button
     }
     .contactform button
     {
-        max-width: 200px;
-        height: 70px;
+        max-width: 160px;
+        height: 60px;
         border-radius: 40px;
         display: block;
         margin: auto;
     }
-
+    .contactform img
+    {
+        
+        
+        
+    }
    
 
 }
