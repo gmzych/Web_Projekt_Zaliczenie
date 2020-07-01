@@ -172,7 +172,7 @@ header div .button
 
 
     }
-    header h2: 
+    header h2
     {
         font-size: 24px;
     }
@@ -213,6 +213,8 @@ header div .button
         font-size: 24px;
         line-height: 60px;
         border-radius: 25px;
+        cursor: pointer;
+        outline:none;
         
     }
     header img
@@ -290,28 +292,7 @@ header div .button
         right: -8%;
         
     }
-
-
-
 }
-@media (min-width: 1024px)
-{
-    header div .button
-    {
-        cursor: pointer;
-        transition: background-color 2s ease-in-out;
-        outline:none;
-        scroll-behavior: smooth;
-        
-    }
-    header div .button:hover
-    {
-        background-color: white;
-        scroll-behavior: smooth;
-    }
-    
-}
-
 /* STYLE DO 1 SEKCJI TECHNOLOGIE */
 
 .mainpage
@@ -324,7 +305,6 @@ header div .button
 .mainpage h1
 {
     font-family: 'Roboto', sans-serif;
-    /* font-family: 'Saira Condensed', sans-serif;  */
     font-size: 50px;
     text-transform: uppercase;
     margin-bottom: 15px;
@@ -350,7 +330,6 @@ header div .button
 {
     width: 100%;
     margin: 5px 0;
-    /* max-width: 350px; */
 }
 
 @media (min-width: 360px)
@@ -687,10 +666,10 @@ header div .button
 .contactform h2
 {
     font-family: 'Roboto', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     padding-top: 20px;
     text-align: center;
-    /* padding: 0 20px; */
+    padding: 0 20px;
 }
 .contactform h1
 {
@@ -700,7 +679,7 @@ header div .button
     padding-bottom: 20px;
     
 }
-.contactform wrap
+.contactform .wrap
 {
     padding-top: 20px;
     max-width: 1024px;
@@ -710,8 +689,8 @@ header div .button
 .contactform button, 
 .contactform textarea
 {
-    width: 100%;
-    margin-bottom: 30px;
+    width:100%;
+    margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     padding: 5px;
@@ -720,11 +699,10 @@ header div .button
 .contactform input
 {
     height: 36px;
-    
 }
 .contactform textarea
 {
-    height: 140px;
+    height: 110px;
 }
 .contactform button
 {
@@ -739,54 +717,89 @@ header div .button
     padding-top: 35px;
     font-size: 0;
 }
-.contactform .icon
+.iconcontact .icon
 {
 
-    padding: 10px 15px;
+    padding: 10px 0;
     font-family: 'Roboto', sans-serif;
+      
 }
-.contactform .icon img
+.iconcontact .icon img
 {
     float: left;
 }
-.contactform .icon span
+.iconcontact .icon span
 {
     line-height: 72px;
-    padding-left: 15px;
+    padding-left: 20px;
     float: left;
     font-size: 18px;
     
 }
 @media (min-width: 533px)
 {
-    .contactform .icon
+    .iconcontact .icon
     {
         display: inline-block;
-        width: 49%;
+        width: 50%;
     }
    
 }
 @media (min-width: 1024px) and (orientation:landscape)
 {
-    .contactform form
+    .contactform form, .contactform .iconcontact
+    {
+        float: left;
+        width: 50%;
+        padding: 0 20px;
+        
+    }
+    .iconcontact .icon
     {
         display: block;
+        width: 60% ;
         margin: 0 auto;
+    }
+    .contactform input,
+    .contactform button,
+    .contactform textarea
+    {
+        margin-bottom: 30px;
+    }
+
+    .contactform input
+    {
+        height: 46px;
+        font-size: 16px;
+        
+    }
+    .contactform textarea
+    {
+        font-size: 16px;
+        height: 220px;
     }
     .contactform button
     {
-        max-width: 160px;
-        height: 60px;
-        border-radius: 40px;
-        display: block;
-        margin: auto;
+        font-size: 16px;
+        line-height: 35px;
+        transition: .3s;
+        cursor: pointer;
     }
-    .contactform img
+    .contactform button:hover
     {
         
+        background-color: white;
         
         
     }
-   
 
+
+}
+footer
+{
+    background-color: rgb(255,88,81);
+    min-height: 3vh;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
 }
